@@ -18,3 +18,7 @@ elif operation == "%":
     print('Остаток от деления number1%number2=', number1 % number2)
 elif operation == "**":
     print('Возведение в степень number1**number2=', number1 ** number2)
+
+x = None
+y = 10
+if x!
