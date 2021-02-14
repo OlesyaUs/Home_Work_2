@@ -10,7 +10,7 @@ def shift(lst, steps):
 numbers = [4, 5, 6, 7, 8, 9, 0]
 print(numbers)
 
-shift(numbers, -4)
+shift(numbers, -5)
 print(numbers)
 
 shift(numbers, 2)
