@@ -1,0 +1,19 @@
+import requests
+from bs4 import BeautifulSoup as BS
+
+
+class News:
+    def __init__(self):
+        self.site_name = "http://24.kg"
+        self.get_text = []
+
+    def parse(self):
+        response = requests.get(self.site_name)
+        soup = BS(response.content, "html.parser")
+        text = soup.select("div.one")
+        for i in text:
+            self.get_text.append(i.text)
+        return self.get_text
+
+a = News()
+print(a.parse())

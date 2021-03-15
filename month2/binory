@@ -1,0 +1,15 @@
+def binory_search(arr, num):
+    a = len(arr) // 2
+    n = arr[a]
+    print(arr, a)
+
+    if n == num:
+        return arr[a]
+    elif n > num:
+        return binory_search(arr[:a], num)
+    elif n < num:
+        return binory_search(arr[a:], num)
+
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+print(binory_search(arr, 1))

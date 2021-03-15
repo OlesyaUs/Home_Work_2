@@ -1,0 +1,6 @@
+file = open("data.txt", "r")
+class Human:
+
+
+
+for i in file.

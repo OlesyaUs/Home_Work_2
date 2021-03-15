@@ -1,0 +1,17 @@
+class Animal:
+    def __init__(self, color, size, brain):
+       self.color = color
+       self.color = size
+       self.brain = brain
+    def birth(self):
+        pass
+
+    def live(self):
+        pass
+
+    def deaf(self):
+        pass
+
+class Parrot(Animal):
+    def __init__(self, color, wing, size, tail, brain, beak):
+        super(Parrot< self).__init__(color, size, blesson)
